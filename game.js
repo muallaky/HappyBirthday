@@ -4,7 +4,7 @@ window.addEventListener('load', () => {
 });
 
 let inventoryAlertShown = false;
-let currentRoom = "living-room";
+let currentRoom = "office-closed";
 let isBoxOpen = false;
 let selectedInventoryItem = null;
 
@@ -432,3 +432,4 @@ function startBalloonAnimation() {
 
 
 renderRoom();
+
