@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Virtual Birthday</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <div id="room">
+      <img id="room-image" src="assets/rooms/living-room.png" alt="Room" />
+      <div id="room-items"></div>
+      <img class="arrow left" src="assets/ui/left-arrow.png" data-direction="left" alt="Left Arrow" />
+      <img class="arrow right" src="assets/ui/right-arrow.png" data-direction="right" alt="Right Arrow" />
+    </div>
+
+    <div id="ui">
+      <div id="inventory">
+        <div id="inventory-items"></div>
+      </div>
+    </div>
+
+    <div id="message-box" class="message-box" style="display:none;">
+      <span id="close-message" class="close-button">×</span>
+      <p id="message-text"></p>
+    </div>
+
+  </div>
+  <div id="photo-album" class="hidden">
+  <div id="album-header">
+    <h2>Küçük bir not...</h2>
+    <button id="close-album">X</button>
+  </div>
+  <div id="album-photos">
+    <!-- Fotoğraflar buraya JS ile veya statik olarak eklenebilir -->
+  </div>
+</div>
+
+<!-- Albüm Açma Butonu (UI’da uygun yere koyabilirsin) -->
+<button id="open-album" class="album-button">📷</button>
+
+  <script src="game.js"></script>
+</body>
+</html>
